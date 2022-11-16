@@ -1,0 +1,79 @@
+<style>
+  body{
+    background-color: #BFB9B4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.container1{
+  background-color: aliceblue;
+  padding: 100px;
+  height: 300px;
+  text-align: center;
+}
+.container2{
+  background-color: aliceblue;
+  padding: 100px;
+  padding-top: 100px;
+  text-align: center;
+  height: 300px;
+}
+.btn3
+{
+  display: block;
+  margin: 40px 0;
+  width: 240px;
+  height: 80px;
+  border: none;
+  background-color:#459CFF;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.btn4
+{
+  display: block;
+  margin: 40px 0;
+  width: 240px;
+  height: 80px;
+  border: none;
+  background-color:#FFA8B2;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.btn3:hover {
+  transform: rotateY(15deg);
+  box-shadow: -15px 0 15px #00a8ff;
+}
+
+.btn4:hover {
+  transform: rotateY(-15deg);
+  box-shadow: 15px 0 15px #00a8ff;
+}
+</style>
+
+
+
+
+<body background="kkk,jpg">
+    
+<form action="/index" method="post">
+    <div class="container1">
+        <h3>Personal login</h3>
+        <button type="submit" class="btn btn3">Login</button>
+      </div>
+</form>
+<form action="/adlogin1" method="post">
+    <div class="container2">
+        <h3>Admin login</h3>
+        <button type="submit" class="btn btn4">Login</button>
+      </div>
+</form>
+</body>

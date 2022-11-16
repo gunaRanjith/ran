@@ -1,0 +1,31 @@
+<form action="/signup" method="post">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="container">
+    {% if err %}
+        <p>{{err}}</p>
+    {% endif %}
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" required>
+    <label for="email"><b>Phonenumber</b></label>
+    <input type="text" placeholder="Enter Phonenumber" name="pno" id="pno" required>
+
+    <label for="psw"><b>Service number</b></label>
+    <input type="password" placeholder="Enter servicenumber" name="sno" id="sno" required>
+
+    <label for="psw-repeat"><b>Password</b></label>
+    <input type="password" placeholder=" Password" name="ps" id="ps" required>
+    <hr>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account?  <a href="/Login">Sign in</a>.</p>
+  </div>
+</body>
+</form>

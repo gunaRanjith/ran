@@ -1,0 +1,24 @@
+
+    <div class="container">
+        {{"              "+"servicenumber"+"                   "+"unit" +"            " + "amount"}}
+        {% for i in k %}
+        <p>{{"          "+i[1]+"                     "+i[2]+"               "+i[3]}}</p>
+
+        {% endfor %}
+        <div class="container signin">
+    
+          <p><a href="/">Home page</a>.</p>
+        </div>
+        <form action="/ad" method="post">
+            <div class="container">
+           
+                <p>search particular user</p>
+                <hr>
+                <div class="group">
+                <label for="psw" class="label"><b>Service number</b></label>
+                <input type="password" class="input" placeholder="Enter servicenumber" name="sno" id="sno" required>
+            </div>
+            <div class="group">
+                <button type="submit" class="button">search</button>
+                </div>
+    </div>
